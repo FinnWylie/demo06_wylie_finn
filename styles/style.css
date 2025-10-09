@@ -1,1 +1,54 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* medium Gray Blue (Primary): #5C9EAD      (canvas background)
+* Dark gray Blue (Text):    #326273          (text, contrast with light)
+* Off-white (Text):         #EEEEEE      (text, contrast with dark)
+* white (Background): #FFFFFF
+* Orange (Accent):  #F48F2A
+*/
+
+.bg-info {
+    background-color: #5C9EAD !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #EEEEEE;            /* Dark green for brand name & nav links for visibility */
+}
+
+.btn {
+    background-color: #5C9EAD;
+    color: #5C9EAD;
+}
+
+.btn-info {
+    color: #EEEEEE;            /* Lightest shade for text on info button for contrast */
+    background-color: #5C9EAD; /* Light green for button background */
+    border-color: #EEEEEE;     /* Dark green for button border */
+}
+
+.btn-primary {
+    color: #EEEEEE;            /* Lightest shade for text on info button for contrast */
+    background-color: #5C9EAD; /* Light green for button background */
+    border-color: #5C9EAD;  /* Lightest shade for text */
+    font-size: 150%; /* Reddish-brown for border to use as accent */
+    border-width: thick;
+}
+
+body {
+    background-color: #FFFFFF; /* Lightest shade for body background to follow the 60% rule */
+}
+
+* {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.text-body-secondary {
+    color: #F4AF2A;
+}

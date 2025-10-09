@@ -9,6 +9,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <!-- Other libraries go here -->
 </head>
 
@@ -16,52 +20,83 @@
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info open-sans">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/image.jpg" height="36" alt="">
+                    brAND.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./images/image.jpg" height="36">
-                ElmoHikes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <main>
+        <div class="px-4 py-5 my-5 text-center open-sans-<aaa>">
+            <img class="d-block mx-auto mb-4" src="./images/image.jpg" alt="" width="72" height="57">
+            <h1 class="display-5 fw-bold">welcome to brAND.</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor esse officiis quae
+                    ullam veritatis voluptas.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-info btn-lg px-4 gap-3">logIN./signUP.</button>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="./images/image.jpg" alt="" width="72" height="57">
-        <h1 class="display-5 fw-bold">Welcome to ElmoHikes</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Join a community of hikers looking for new places to explore.</p>
-            <h2>The view is better, together.</h2>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-info btn-lg px-4 gap-3">Login/Signup</button>
+        <form class="container">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
             </div>
-        </div>
-    </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">3</label>
+            </div>
+
+            <div class="card-body d-grid gap-2">
+                <button id="submit" class="btn btn-primary" type="button">subMIT.</button>
+            </div>
+
+            <div class="card-body form-group">
+                <label for="hikename">seARCH:</label>
+                <input type="text" id="hikename" class="form-control">
+            </div>
+
+
+            <div class="card-body form-group mb-3 mt-3">
+                <label for="comment">comMENTS:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+        </form>
+
+    </main>
 
     <!-- copyright footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">&copy; 2025 BCIT COMP1800</p>
-        <a href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap" />
-            </svg>
-        </a>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer mt-auto bg-body-tertiary">
+        <div class="container">
+            <span class="text-body-secondary">&copy; 2025 BCIT COMP1800</span>
+        </div>
     </footer>
 
     <!---------------------------------------------->
